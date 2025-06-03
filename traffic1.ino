@@ -1,4 +1,4 @@
-int r1 = 10;
+int r1 = 10;   // assigning digital pins  :)
 int y1 = 2;
 int g1 = 3;
 int r2 = 4;
@@ -11,7 +11,7 @@ int g3 = 9;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  pinMode(r1, OUTPUT);
+  pinMode(r1, OUTPUT);     //setting pins for output only :)
   pinMode(y1, OUTPUT);
   pinMode(g1, OUTPUT);
   pinMode(r2, OUTPUT);
@@ -20,7 +20,7 @@ void setup() {
   pinMode(r3, OUTPUT);
   pinMode(y3, OUTPUT);
   pinMode(g3, OUTPUT);
-  digitalWrite(r1, LOW);
+  digitalWrite(r1, LOW);     // initialisation of variables
   digitalWrite(g1, LOW);
   digitalWrite(y1, LOW);
   digitalWrite(r2, LOW);
@@ -31,8 +31,10 @@ void setup() {
   digitalWrite(y3, LOW);
 }
   
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop() {  // put your main code here, to run repeatedly   :)
+
+  // BASIC STRUCTURE OF CODE 
+  
  // digitalWrite(r, HIGH);
   //delay(15000);
   //traffic1();
@@ -41,7 +43,7 @@ void loop() {
   //exit;
 
   digitalWrite(r2, HIGH);
-  digitalWrite(r3, HIGH);
+  digitalWrite(r3, HIGH);          // SIGNAL 1 :)
   digitalWrite(r1, LOW);
   digitalWrite(g1, HIGH);
   Serial.println("signal 1 is green ");
@@ -58,7 +60,7 @@ void loop() {
   digitalWrite(g2, HIGH);
   Serial.println("signal 2 is green ");
   delay(8000);
-  digitalWrite(g2, LOW);
+  digitalWrite(g2, LOW);                  // SIGNAL 2  :)
   digitalWrite(y2, HIGH);
   Serial.println("signal 2 is yellow");
   delay(2000);
@@ -66,7 +68,7 @@ void loop() {
   digitalWrite(r2, HIGH);
 
   digitalWrite(r3, LOW);
-  digitalWrite(g3, HIGH);
+  digitalWrite(g3, HIGH);               // SIGNAL  :)
   Serial.println("signal 3 is green ");
   delay(8000);
   digitalWrite(g3, LOW);
@@ -76,4 +78,5 @@ void loop() {
   digitalWrite(y3, LOW);
   digitalWrite(r3, HIGH);
   return;
+  // exit;
 }
